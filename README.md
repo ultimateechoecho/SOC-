@@ -1,4 +1,4 @@
-# SOC- week 1 assignemnt 
+# SOC- week 1 assignment
 A website about football
 
 Live site--  https://ultimateechoecho.github.io/SOC-/
