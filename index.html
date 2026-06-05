@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Football</title>
+
+    <!-- my CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+            color: #222;
+        }
+
+        /* header and nav bar */
+        header {
+            background-color: #1e7d3c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #145c2c;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #0e3f1e;
+        }
+
+        /* sections */
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        h2 {
+            color: #1e7d3c;
+            border-bottom: 2px solid #1e7d3c;
+            padding-bottom: 5px;
+        }
+
+        /* stats table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #999;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1e7d3c;
+            color: white;
+        }
+
+        /* quiz */
+        #quizBox {
+            background-color: #eafbe7;
+            padding: 15px;
+            border: 1px solid #1e7d3c;
+        }
+
+        button {
+            background-color: #1e7d3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #145c2c;
+        }
+
+        #result {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* footer */
+        footer {
+            background-color: #145c2c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #cfe9d4;
+        }
+
+        /* making it work on phones too */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+            }
+            section {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. Header with navigation bar -->
+    <header>
+        <h1>⚽ All About Football</h1>
+        <p>My favourite sport in the world</p>
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#start">How to Start</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <!-- 2. Game Overview -->
+    <section id="overview">
+        <h2>Game Overview</h2>
+        <p>
+            Football (also called soccer in some countries) is the most popular sport
+            in the world. It is played between two teams of 11 players each. The main
+            aim of the game is to score more goals than the other team by putting the
+            ball into their net.
+        </p>
+        <p>
+            The modern game started in England in 1863 when the Football Association
+            was formed and the rules were written down. Today football is controlled
+            by FIFA and is played in almost every country.
+        </p>
+        <p><b>Basic rules:</b></p>
+        <ul>
+            <li>A match has two halves of 45 minutes each.</li>
+            <li>Only the goalkeeper can touch the ball with their hands.</li>
+            <li>You cannot stand in an offside position when the ball is passed to you.</li>
+            <li>The team with more goals at the end wins the match.</li>
+        </ul>
+    </section>
+
+    <!-- 3. Game Highlights -->
+    <section id="highlights">
+        <h2>Game Highlights</h2>
+        <p>
+            Football has given us many unforgettable moments. The FIFA World Cup,
+            held every four years, is the biggest tournament and billions of people
+            watch it. Club competitions like the UEFA Champions League are also very
+            famous.
+        </p>
+        <p>
+            Some of the greatest players of all time are Pelé, Diego Maradona,
+            Lionel Messi and Cristiano Ronaldo. Messi finally won the World Cup with
+            Argentina in 2022, which was one of the best finals ever.
+        </p>
+
+        <h3>Some Statistics (World Cup Wins)</h3>
+        <table>
+            <tr>
+                <th>Country</th>
+                <th>World Cup Titles</th>
+            </tr>
+            <tr>
+                <td>Brazil</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Germany</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Italy</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Argentina</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- 4. How to Get Started -->
+    <section id="start">
+        <h2>How to Get Started</h2>
+        <p>If you are new to football, here are some simple tips to begin:</p>
+        <p><b>Equipment you need:</b></p>
+        <ul>
+            <li>A football</li>
+            <li>A pair of football boots</li>
+            <li>Shin guards and socks</li>
+            <li>Comfortable clothes to run in</li>
+        </ul>
+        <p><b>Tips for beginners:</b></p>
+        <ul>
+            <li>Practice basic passing and ball control every day.</li>
+            <li>Watch matches to learn positions and movement.</li>
+            <li>Play with friends to improve teamwork.</li>
+            <li>Always warm up before playing to avoid injuries.</li>
+        </ul>
+    </section>
+
+    <!-- 5. Interactive Element (JavaScript Quiz) -->
+    <section id="quiz">
+        <h2>Quick Quiz</h2>
+        <p>Test how much you know about football!</p>
+
+        <div id="quizBox">
+            <p><b>Q1.</b> How many players are there in one football team on the field?</p>
+            <input type="radio" name="q1" value="wrong"> 9 <br>
+            <input type="radio" name="q1" value="right"> 11 <br>
+            <input type="radio" name="q1" value="wrong"> 12 <br>
+
+            <p><b>Q2.</b> How long is a normal football match (without extra time)?</p>
+            <input type="radio" name="q2" value="wrong"> 60 minutes <br>
+            <input type="radio" name="q2" value="right"> 90 minutes <br>
+            <input type="radio" name="q2" value="wrong"> 120 minutes <br>
+
+            <p><b>Q3.</b> Which country won the 2022 FIFA World Cup?</p>
+            <input type="radio" name="q3" value="wrong"> France <br>
+            <input type="radio" name="q3" value="right"> Argentina <br>
+            <input type="radio" name="q3" value="wrong"> Brazil <br>
+
+            <button onclick="checkQuiz()">Submit Answers</button>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <!-- 6. Footer -->
+    <footer>
+        <p>Useful Links:
+            <a href="https://www.fifa.com" target="_blank">FIFA Official Site</a> |
+            <a href="https://www.premierleague.com" target="_blank">Premier League</a>
+        </p>
+        <p>&copy; 2025 All About Football. Made by a football fan.</p>
+    </footer>
+
+    <!-- my JavaScript for the quiz -->
+    <script>
+        function checkQuiz() {
+            var score = 0;
+
+            // question 1
+            var q1 = document.getElementsByName("q1");
+            for (var i = 0; i < q1.length; i++) {
+                if (q1[i].checked && q1[i].value == "right") {
+                    score = score + 1;
+                }
+            }
+
+            // question 2
+            var q2 = document.getElementsByName("q2");
+            for (var i = 0; i < q2.length; i++) {
+                if (q2[i].checked && q2[i].value == "right") {
+                    score = score + 1;
+                }
+            }
+
+            // question 3
+            var q3 = document.getElementsByName("q3");
+            for (var i = 0; i < q3.length; i++) {
+                if (q3[i].checked && q3[i].value == "right") {
+                    score = score + 1;
+                }
+            }
+
+            // show the result
+            document.getElementById("result").innerHTML = "You got " + score + " out of 3 correct!";
+        }
+    </script>
+
+</body>
+</html>
